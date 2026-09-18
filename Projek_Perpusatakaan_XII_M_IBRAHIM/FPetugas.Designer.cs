@@ -16,7 +16,6 @@
         private void InitializeComponent()
         {
             this.panelHeader = new System.Windows.Forms.Panel();
-            this.lblHeaderIcon = new System.Windows.Forms.Label();
             this.lblHeaderTitle = new System.Windows.Forms.Label();
             this.lblHeaderSub = new System.Windows.Forms.Label();
             this.lblUserBadge = new System.Windows.Forms.Label();
@@ -33,7 +32,6 @@
             // panelHeader
             // 
             this.panelHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(42)))), ((int)(((byte)(76)))));
-            this.panelHeader.Controls.Add(this.lblHeaderIcon);
             this.panelHeader.Controls.Add(this.lblHeaderTitle);
             this.panelHeader.Controls.Add(this.lblHeaderSub);
             this.panelHeader.Controls.Add(this.lblUserBadge);
@@ -42,17 +40,6 @@
             this.panelHeader.Name = "panelHeader";
             this.panelHeader.Size = new System.Drawing.Size(1100, 64);
             this.panelHeader.TabIndex = 0;
-            // 
-            // lblHeaderIcon
-            // 
-            this.lblHeaderIcon.Font = new System.Drawing.Font("Segoe UI Emoji", 22F);
-            this.lblHeaderIcon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
-            this.lblHeaderIcon.Location = new System.Drawing.Point(16, 10);
-            this.lblHeaderIcon.Name = "lblHeaderIcon";
-            this.lblHeaderIcon.Size = new System.Drawing.Size(46, 42);
-            this.lblHeaderIcon.TabIndex = 0;
-            this.lblHeaderIcon.Text = "📚";
-            this.lblHeaderIcon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblHeaderTitle
             // 
@@ -125,7 +112,7 @@
             this.btnTransaksi.Name = "btnTransaksi";
             this.btnTransaksi.Size = new System.Drawing.Size(176, 40);
             this.btnTransaksi.TabIndex = 1;
-            this.btnTransaksi.Text = "📋   Transaksi";
+            this.btnTransaksi.Text = "  Transaksi";
             this.btnTransaksi.Click += new System.EventHandler(this.btnTransaksi_Click);
             // 
             // btnLogout
@@ -200,7 +187,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panelHeader;
-        private System.Windows.Forms.Label lblHeaderIcon;
         private System.Windows.Forms.Label lblHeaderTitle;
         private System.Windows.Forms.Label lblHeaderSub;
         private System.Windows.Forms.Label lblUserBadge;

@@ -318,7 +318,7 @@ namespace Projek_Perpusatakaan_XII_M_IBRAHIM
             this.btnCekBuku.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnCekBuku.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(200)))), ((int)(((byte)(230)))));
             this.btnCekBuku.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(115)))));
-            this.btnCekBuku.Location = new System.Drawing.Point(390, 32);
+            this.btnCekBuku.Location = new System.Drawing.Point(394, 32);
             this.btnCekBuku.Name = "btnCekBuku";
             this.btnCekBuku.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(55)))), ((int)(((byte)(78)))));
             this.btnCekBuku.Size = new System.Drawing.Size(70, 36);

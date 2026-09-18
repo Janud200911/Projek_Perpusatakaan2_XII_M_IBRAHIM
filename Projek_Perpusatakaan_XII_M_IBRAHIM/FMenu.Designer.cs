@@ -19,7 +19,6 @@ namespace Projek_Perpusatakaan_XII_M_IBRAHIM
             this.components = new System.ComponentModel.Container();
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.panelHeader = new System.Windows.Forms.Panel();
-            this.lblHeaderIcon = new System.Windows.Forms.Label();
             this.lblHeaderTitle = new System.Windows.Forms.Label();
             this.lblHeaderSub = new System.Windows.Forms.Label();
             this.lblUserBadge = new System.Windows.Forms.Label();
@@ -34,6 +33,7 @@ namespace Projek_Perpusatakaan_XII_M_IBRAHIM
             this.btnLogout = new Guna.UI2.WinForms.Guna2Button();
             this.panelContent = new Guna.UI2.WinForms.Guna2Panel();
             this.panelDivider = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.panelHeader.SuspendLayout();
             this.panelSidebar.SuspendLayout();
             this.SuspendLayout();
@@ -41,7 +41,6 @@ namespace Projek_Perpusatakaan_XII_M_IBRAHIM
             // panelHeader
             // 
             this.panelHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(42)))), ((int)(((byte)(76)))));
-            this.panelHeader.Controls.Add(this.lblHeaderIcon);
             this.panelHeader.Controls.Add(this.lblHeaderTitle);
             this.panelHeader.Controls.Add(this.lblHeaderSub);
             this.panelHeader.Controls.Add(this.lblUserBadge);
@@ -50,17 +49,6 @@ namespace Projek_Perpusatakaan_XII_M_IBRAHIM
             this.panelHeader.Name = "panelHeader";
             this.panelHeader.Size = new System.Drawing.Size(1100, 64);
             this.panelHeader.TabIndex = 0;
-            // 
-            // lblHeaderIcon
-            // 
-            this.lblHeaderIcon.Font = new System.Drawing.Font("Segoe UI Emoji", 22F);
-            this.lblHeaderIcon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
-            this.lblHeaderIcon.Location = new System.Drawing.Point(16, 10);
-            this.lblHeaderIcon.Name = "lblHeaderIcon";
-            this.lblHeaderIcon.Size = new System.Drawing.Size(46, 42);
-            this.lblHeaderIcon.TabIndex = 0;
-            this.lblHeaderIcon.Text = "📚";
-            this.lblHeaderIcon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblHeaderTitle
             // 
@@ -96,6 +84,7 @@ namespace Projek_Perpusatakaan_XII_M_IBRAHIM
             // panelSidebar
             // 
             this.panelSidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(32)))), ((int)(((byte)(52)))));
+            this.panelSidebar.Controls.Add(this.label1);
             this.panelSidebar.Controls.Add(this.lblMenuTitle);
             this.panelSidebar.Controls.Add(this.btnDashboard);
             this.panelSidebar.Controls.Add(this.btnDataBuku);
@@ -114,7 +103,7 @@ namespace Projek_Perpusatakaan_XII_M_IBRAHIM
             // 
             this.lblMenuTitle.Font = new System.Drawing.Font("Segoe UI", 7.5F, System.Drawing.FontStyle.Bold);
             this.lblMenuTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(110)))), ((int)(((byte)(160)))));
-            this.lblMenuTitle.Location = new System.Drawing.Point(16, 16);
+            this.lblMenuTitle.Location = new System.Drawing.Point(3, 23);
             this.lblMenuTitle.Name = "lblMenuTitle";
             this.lblMenuTitle.Size = new System.Drawing.Size(168, 18);
             this.lblMenuTitle.TabIndex = 0;
@@ -156,7 +145,7 @@ namespace Projek_Perpusatakaan_XII_M_IBRAHIM
             this.btnDataBuku.Name = "btnDataBuku";
             this.btnDataBuku.Size = new System.Drawing.Size(176, 40);
             this.btnDataBuku.TabIndex = 2;
-            this.btnDataBuku.Text = "📖   Data Buku";
+            this.btnDataBuku.Text = "   Data Buku";
             this.btnDataBuku.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // btnKategori
@@ -176,7 +165,7 @@ namespace Projek_Perpusatakaan_XII_M_IBRAHIM
             this.btnKategori.Name = "btnKategori";
             this.btnKategori.Size = new System.Drawing.Size(176, 40);
             this.btnKategori.TabIndex = 3;
-            this.btnKategori.Text = "🗂   Kategori";
+            this.btnKategori.Text = "   Kategori";
             // 
             // btnDataUser
             // 
@@ -191,11 +180,11 @@ namespace Projek_Perpusatakaan_XII_M_IBRAHIM
             this.btnDataUser.Font = new System.Drawing.Font("Segoe UI", 9.5F);
             this.btnDataUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(200)))), ((int)(((byte)(230)))));
             this.btnDataUser.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(99)))), ((int)(((byte)(235)))));
-            this.btnDataUser.Location = new System.Drawing.Point(12, 188);
+            this.btnDataUser.Location = new System.Drawing.Point(12, 342);
             this.btnDataUser.Name = "btnDataUser";
             this.btnDataUser.Size = new System.Drawing.Size(176, 40);
             this.btnDataUser.TabIndex = 4;
-            this.btnDataUser.Text = "👥   Data User";
+            this.btnDataUser.Text = "  Data User";
             this.btnDataUser.Click += new System.EventHandler(this.guna2Button4_Click);
             // 
             // btnDataRole
@@ -211,11 +200,11 @@ namespace Projek_Perpusatakaan_XII_M_IBRAHIM
             this.btnDataRole.Font = new System.Drawing.Font("Segoe UI", 9.5F);
             this.btnDataRole.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(200)))), ((int)(((byte)(230)))));
             this.btnDataRole.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(99)))), ((int)(((byte)(235)))));
-            this.btnDataRole.Location = new System.Drawing.Point(12, 236);
+            this.btnDataRole.Location = new System.Drawing.Point(18, 296);
             this.btnDataRole.Name = "btnDataRole";
             this.btnDataRole.Size = new System.Drawing.Size(176, 40);
             this.btnDataRole.TabIndex = 5;
-            this.btnDataRole.Text = "🔐   Data Role";
+            this.btnDataRole.Text = "  Data Role";
             this.btnDataRole.Click += new System.EventHandler(this.guna2Button5_Click);
             // 
             // btnTransaksi
@@ -231,11 +220,11 @@ namespace Projek_Perpusatakaan_XII_M_IBRAHIM
             this.btnTransaksi.Font = new System.Drawing.Font("Segoe UI", 9.5F);
             this.btnTransaksi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(200)))), ((int)(((byte)(230)))));
             this.btnTransaksi.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(99)))), ((int)(((byte)(235)))));
-            this.btnTransaksi.Location = new System.Drawing.Point(12, 284);
+            this.btnTransaksi.Location = new System.Drawing.Point(12, 190);
             this.btnTransaksi.Name = "btnTransaksi";
             this.btnTransaksi.Size = new System.Drawing.Size(176, 40);
             this.btnTransaksi.TabIndex = 7;
-            this.btnTransaksi.Text = "📋   Transaksi";
+            this.btnTransaksi.Text = "  Transaksi";
             this.btnTransaksi.Click += new System.EventHandler(this.btnTransaksi_Click);
             // 
             // btnLogout
@@ -275,6 +264,16 @@ namespace Projek_Perpusatakaan_XII_M_IBRAHIM
             this.panelDivider.Size = new System.Drawing.Size(200, 100);
             this.panelDivider.TabIndex = 0;
             // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 7.5F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(110)))), ((int)(((byte)(160)))));
+            this.label1.Location = new System.Drawing.Point(3, 275);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(168, 18);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "NAVIGASI ROLE";
+            // 
             // FAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -299,7 +298,6 @@ namespace Projek_Perpusatakaan_XII_M_IBRAHIM
 
         private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
         private System.Windows.Forms.Panel panelHeader;
-        private System.Windows.Forms.Label lblHeaderIcon;
         private System.Windows.Forms.Label lblHeaderTitle;
         private System.Windows.Forms.Label lblHeaderSub;
         private System.Windows.Forms.Label lblUserBadge;
@@ -314,5 +312,6 @@ namespace Projek_Perpusatakaan_XII_M_IBRAHIM
         private Guna.UI2.WinForms.Guna2Button btnLogout;
         private Guna.UI2.WinForms.Guna2Panel panelContent;
         private System.Windows.Forms.Panel panelDivider;
+        private System.Windows.Forms.Label label1;
     }
 }
