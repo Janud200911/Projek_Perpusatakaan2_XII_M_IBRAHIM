@@ -60,6 +60,12 @@
     <Compile Include="FBuku.Designer.cs">
       <DependentUpon>FBuku.cs</DependentUpon>
     </Compile>
+    <Compile Include="Fdashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fdashboard.Designer.cs">
+      <DependentUpon>Fdashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="FMenu.cs">
       <SubType>Form</SubType>
     </Compile>
