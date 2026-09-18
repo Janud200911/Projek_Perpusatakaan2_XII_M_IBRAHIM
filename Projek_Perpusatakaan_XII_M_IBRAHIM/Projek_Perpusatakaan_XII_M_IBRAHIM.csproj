@@ -107,6 +107,9 @@
     <EmbeddedResource Include="FBuku.resx">
       <DependentUpon>FBuku.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FDashboard.resx">
+      <DependentUpon>Fdashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FMenu.resx">
       <DependentUpon>FMenu.cs</DependentUpon>
     </EmbeddedResource>

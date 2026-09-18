@@ -127,6 +127,7 @@ namespace Projek_Perpusatakaan_XII_M_IBRAHIM
             this.btnDashboard.Size = new System.Drawing.Size(176, 40);
             this.btnDashboard.TabIndex = 1;
             this.btnDashboard.Text = "🏠   Dashboard";
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // btnDataBuku
             // 

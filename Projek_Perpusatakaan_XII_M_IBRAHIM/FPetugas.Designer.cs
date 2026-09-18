@@ -108,11 +108,11 @@
             this.btnTransaksi.Font = new System.Drawing.Font("Segoe UI", 9.5F);
             this.btnTransaksi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(200)))), ((int)(((byte)(230)))));
             this.btnTransaksi.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(99)))), ((int)(((byte)(235)))));
-            this.btnTransaksi.Location = new System.Drawing.Point(12, 44);
+            this.btnTransaksi.Location = new System.Drawing.Point(12, 92);
             this.btnTransaksi.Name = "btnTransaksi";
             this.btnTransaksi.Size = new System.Drawing.Size(176, 40);
             this.btnTransaksi.TabIndex = 1;
-            this.btnTransaksi.Text = "  Transaksi";
+            this.btnTransaksi.Text = "📋   Transaksi";
             this.btnTransaksi.Click += new System.EventHandler(this.btnTransaksi_Click);
             // 
             // btnLogout
@@ -158,11 +158,12 @@
             this.btnDashboard.Font = new System.Drawing.Font("Segoe UI", 9.5F);
             this.btnDashboard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(200)))), ((int)(((byte)(230)))));
             this.btnDashboard.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(99)))), ((int)(((byte)(235)))));
-            this.btnDashboard.Location = new System.Drawing.Point(20, 90);
+            this.btnDashboard.Location = new System.Drawing.Point(12, 44);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.Size = new System.Drawing.Size(176, 40);
             this.btnDashboard.TabIndex = 2;
             this.btnDashboard.Text = "🏠   Dashboard";
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // FPetugas
             // 

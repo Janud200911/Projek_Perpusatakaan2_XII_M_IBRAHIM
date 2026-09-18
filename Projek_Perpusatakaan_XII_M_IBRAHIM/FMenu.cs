@@ -42,6 +42,14 @@ namespace Projek_Perpusatakaan_XII_M_IBRAHIM
         private void FAdmin_Load(object sender, EventArgs e)
         {
             lblUserBadge.Text = "👤  " + _nama;
+            SetActiveNav(btnDashboard);
+            OpenForm(new Fdashboard());
+        }
+
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+            SetActiveNav(btnDashboard);
+            OpenForm(new Fdashboard());
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
