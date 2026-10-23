@@ -2,6 +2,9 @@
 using System.Data;
 using System.Drawing;
 using System.Windows.Forms;
+using CrystalDecisions.CrystalReports.Engine;
+using CrystalDecisions.Shared;
+using System.IO;
 
 namespace Projek_Perpusatakaan_XII_M_IBRAHIM
 {
@@ -84,6 +87,18 @@ namespace Projek_Perpusatakaan_XII_M_IBRAHIM
         private void panelDenda_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            ReportDocument rpt = new ReportDocument();
+            rpt.Load("LAPORAN DATA PETUGAS.rpt");
+
+            string pdfPath = Path.Combine(Path.GetTempPath(), "Laporan_Barang.pdf");
+            rpt.ExportToDisk(ExportFormatType.PortableDocFormat, pdfPath);
+
+            // Membuka PDF otomatis di browser/PDF viewer
+            System.Diagnostics.Process.Start(pdfPath);
         }
     }
 }

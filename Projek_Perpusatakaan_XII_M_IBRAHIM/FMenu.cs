@@ -85,5 +85,11 @@ namespace Projek_Perpusatakaan_XII_M_IBRAHIM
                 this.Close();
             }
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            SetActiveNav(guna2Button1);
+            OpenForm(new Form2());
+        }
     }
 }

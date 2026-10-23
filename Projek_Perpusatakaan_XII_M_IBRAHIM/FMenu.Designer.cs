@@ -23,6 +23,7 @@ namespace Projek_Perpusatakaan_XII_M_IBRAHIM
             this.lblHeaderSub = new System.Windows.Forms.Label();
             this.lblUserBadge = new System.Windows.Forms.Label();
             this.panelSidebar = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.lblMenuTitle = new System.Windows.Forms.Label();
             this.btnDashboard = new Guna.UI2.WinForms.Guna2Button();
             this.btnDataBuku = new Guna.UI2.WinForms.Guna2Button();
@@ -33,7 +34,7 @@ namespace Projek_Perpusatakaan_XII_M_IBRAHIM
             this.btnLogout = new Guna.UI2.WinForms.Guna2Button();
             this.panelContent = new Guna.UI2.WinForms.Guna2Panel();
             this.panelDivider = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.panelHeader.SuspendLayout();
             this.panelSidebar.SuspendLayout();
             this.SuspendLayout();
@@ -84,6 +85,7 @@ namespace Projek_Perpusatakaan_XII_M_IBRAHIM
             // panelSidebar
             // 
             this.panelSidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(32)))), ((int)(((byte)(52)))));
+            this.panelSidebar.Controls.Add(this.guna2Button1);
             this.panelSidebar.Controls.Add(this.label1);
             this.panelSidebar.Controls.Add(this.lblMenuTitle);
             this.panelSidebar.Controls.Add(this.btnDashboard);
@@ -98,6 +100,16 @@ namespace Projek_Perpusatakaan_XII_M_IBRAHIM
             this.panelSidebar.Name = "panelSidebar";
             this.panelSidebar.Size = new System.Drawing.Size(200, 576);
             this.panelSidebar.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 7.5F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(110)))), ((int)(((byte)(160)))));
+            this.label1.Location = new System.Drawing.Point(3, 275);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(168, 18);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "NAVIGASI ROLE";
             // 
             // lblMenuTitle
             // 
@@ -265,15 +277,25 @@ namespace Projek_Perpusatakaan_XII_M_IBRAHIM
             this.panelDivider.Size = new System.Drawing.Size(200, 100);
             this.panelDivider.TabIndex = 0;
             // 
-            // label1
+            // guna2Button1
             // 
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 7.5F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(110)))), ((int)(((byte)(160)))));
-            this.label1.Location = new System.Drawing.Point(3, 275);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(168, 18);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "NAVIGASI ROLE";
+            this.guna2Button1.Animated = true;
+            this.guna2Button1.BorderRadius = 8;
+            this.guna2Button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(60)))), ((int)(((byte)(80)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9.5F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(200)))), ((int)(((byte)(230)))));
+            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(99)))), ((int)(((byte)(235)))));
+            this.guna2Button1.Location = new System.Drawing.Point(18, 388);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(176, 40);
+            this.guna2Button1.TabIndex = 8;
+            this.guna2Button1.Text = " Report";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // FAdmin
             // 
@@ -314,5 +336,6 @@ namespace Projek_Perpusatakaan_XII_M_IBRAHIM
         private Guna.UI2.WinForms.Guna2Panel panelContent;
         private System.Windows.Forms.Panel panelDivider;
         private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }
